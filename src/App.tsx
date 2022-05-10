@@ -1,4 +1,4 @@
-import { Col, Row, Table } from 'antd';
+import { Col, Input, Row, Table } from 'antd';
 import { User, UserService } from 'daviht7-sdk';
 import { useEffect, useState } from 'react';
 import './index.css';
@@ -31,6 +31,7 @@ function App() {
   return (
     <Row gutter={8} justify={'center'}>
       <Col span={12}>
+        <Input placeholder='Basic usage' maxLength={10} />
         <Table dataSource={users} columns={columns} />;
       </Col>
     </Row>
